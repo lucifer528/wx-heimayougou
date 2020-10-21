@@ -1,0 +1,24 @@
+<view class="goodsList">
+  <!-- 列表头部 -->
+  <view class="listTitle">
+    <view class="titleItem {{item.isActive ? 'isActive' : ''}}"
+    wx:for="{{tabs}}" wx:key="id" bindtap="tabClick"
+    data-id="{{item.id}}">
+      {{item.value}}
+    </view>
+  </view>
+  <!-- 商品列表 -->
+  <view class="listContent">
+    <navigator class="listItem" wx:for="{{goodsList}}"
+    wx:key="goods_id"
+    url="/pages/goods_detail/index?goods_id={{item.goods_id}}">
+      <view class="picture">
+        <image mode="scaleToFill" src="{{item.goods_small_logo}}" />
+      </view>
+      <view class="description">
+        <text class="name">{{item.goods_name}}</text>
+        <text class="price">￥{{item.goods_price}}</text>
+      </view>
+    </navigator>
+  </view>
+</view>

@@ -1,0 +1,21 @@
+<Tabs tabs="{{tabs}}" bindtabsItemChange="handleTabsItemChange"></Tabs>
+<view class="collect_main">
+  <view class="collect_title">
+    <text class="collect_tips active">全部</text>
+    <text class="collect_tips">正在热卖</text>
+    <text class="collect_tips">即将上线</text>
+  </view>
+</view>
+<view class="listContent">
+  <navigator class="listItem" wx:for="{{collect}}"
+  wx:key="goods_id"
+  url="/pages/goods_detail/index?goods_id={{item.goods_id}}">
+    <view class="picture">
+      <image mode="scaleToFill" src="{{item.goods_small_logo}}" />
+    </view>
+    <view class="description">
+      <text class="name">{{item.goods_name}}</text>
+      <text class="price">￥{{item.goods_price}}</text>
+    </view>
+  </navigator>
+</view>

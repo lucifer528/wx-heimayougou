@@ -1,0 +1,17 @@
+.order_main .order_item {
+  padding: 20rpx;
+  border-bottom: 1rpx solid #ccc;
+}
+.order_main .order_item .order_item_row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #666;
+}
+.order_main .order_item .order_item_row .order_price_value {
+  color: var(--themeColor);
+  font-size: 32rpx;
+}
+.order_main .order_item .order_item_row .order_time_value {
+  font-weight: bold;
+}

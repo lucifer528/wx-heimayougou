@@ -1,0 +1,4 @@
+<searchInput></searchInput>
+<tabs goodsList="{{goodsList}}" tabs="{{tabs}}"
+bindtabsItemChange="handleTabsItemChange">
+</tabs>

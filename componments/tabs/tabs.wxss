@@ -1,0 +1,53 @@
+.goodsList .listTitle {
+  display: flex;
+  position: sticky;
+  top: 0;
+}
+.goodsList .listTitle .titleItem {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90rpx;
+  font-size: 1.3em;
+  background-color: #fff;
+}
+.goodsList .listTitle .isActive {
+  color: var(--themeColor);
+  border-bottom: 5rpx solid currentColor;
+}
+.goodsList .listContent {
+  display: flex;
+  flex-wrap: wrap;
+}
+.goodsList .listContent .listItem {
+  display: flex;
+  padding: 10rpx;
+  height: 300rpx;
+  width: 100%;
+  border-bottom: 5rpx solid #ddd;
+}
+.goodsList .listContent .listItem .picture {
+  flex: 1;
+  padding: 30rpx;
+}
+.goodsList .listContent .listItem .description {
+  flex: 2;
+  padding: 20rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.goodsList .listContent .listItem .description .name {
+  font-size: 1.2em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.goodsList .listContent .listItem .description .price {
+  font-size: 1.5em;
+  color: var(--themeColor);
+  font-weight: 500;
+}

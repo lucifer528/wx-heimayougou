@@ -1,0 +1,116 @@
+page {
+  padding-bottom: 90rpx;
+}
+.receiver_address_row .address_btn {
+  padding: 20rpx;
+}
+.receiver_address_row .user {
+  display: flex;
+  flex-direction: column;
+  padding: 30rpx 20rpx;
+  border-bottom: 3rpx solid var(--themeColor);
+}
+.receiver_address_row .user .user_info {
+  display: flex;
+  justify-content: space-between;
+}
+.cart_title {
+  font-size: 1.5em;
+  color: var(--themeColor);
+  border-top: 2rpx solid #ddd;
+  border-bottom: 2rpx solid #ddd;
+  padding: 20rpx;
+}
+.cart_content .cart_item {
+  display: flex;
+  align-items: center;
+  height: 250rpx;
+  border-bottom: 5rpx solid #eee;
+  padding: 30rpx 10rpx;
+}
+.cart_content .cart_item checkbox-group {
+  flex: 1;
+}
+.cart_content .cart_item navigator {
+  flex: 3;
+  height: 100%;
+  padding: 8rpx;
+}
+.cart_content .cart_item .goods_info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 90%;
+  flex: 6;
+}
+.cart_content .cart_item .goods_info .goods_name {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  text-overflow: ellipsis;
+}
+.cart_content .cart_item .goods_info .price_count {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.2em;
+  color: var(--themeColor);
+}
+.cart_content .cart_item .goods_info .price_count .count {
+  display: flex;
+  height: 2em;
+  align-items: center;
+}
+.cart_content .cart_item .goods_info .price_count .count .btn {
+  border: 1rpx solid #aaa;
+  height: 2em;
+  width: 2em;
+  font-size: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0;
+}
+.cart_content .cart_item .goods_info .price_count .count input {
+  width: 2.5em;
+  text-align: center;
+}
+.footer_count {
+  display: flex;
+  position: fixed;
+  left: 0;
+  width: 100%;
+  bottom: 0;
+  box-shadow: 0 -3rpx 2rpx #ddd;
+  height: 90rpx;
+  justify-content: center;
+}
+.footer_count .switch_check {
+  flex: 1;
+  padding: 0 20rpx;
+  display: flex;
+  align-items: center;
+}
+.footer_count .total {
+  flex: 3;
+  text-align: right;
+  padding-right: 10rpx;
+}
+.footer_count .total .total_price {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 1.5em;
+}
+.footer_count .total .total_price .total_price_text {
+  color: var(--themeColor);
+  padding: 0 0 0 30rpx;
+}
+.footer_count .order_pay_wrap {
+  flex: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--themeColor);
+  font-size: 1.5em;
+  color: #fff;
+}
